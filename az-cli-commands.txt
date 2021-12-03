@@ -8,3 +8,8 @@
   az webapp create   --name tailspin-space-game-web-test-$webappsuffix   --resource-group tailspin-space-game-rg   --plan tailspin-space-game-asp   --runtime "DOTNET|5.0"
   az webapp create   --name tailspin-space-game-web-staging-$webappsuffix   --resource-group tailspin-space-game-rg   --plan tailspin-space-game-asp   --runtime "DOTNET|5.0"
   az webapp list   --resource-group tailspin-space-game-rg   --query "[].{hostName: defaultHostName, state: state}"   --output table
+
+
+To see what's installed in Windows 2019:
+
+ https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md 
